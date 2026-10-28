@@ -1,6 +1,8 @@
-# ESC V1.0 引脚分配表 A
+# ESC V1.0 引脚分配表 B
 
-日期：2026-10-27。器件：**STM32G071CBT6，LQFP48，128KB Flash**；**DRV8323SRTAR，RTA 40脚 WQFN**。
+更新日期：2026-10-28。器件：**STM32G071CBU6，UFQFPN48（7×7mm），128KB Flash**；**DRV8323SRTAR，RTA 40脚 WQFN**。
+
+封装变更记录：按用户要求，由A版的STM32G071CBT6（LQFP48）改为STM32G071CBU6（UFQFPN48）。依据ST数据手册第40页图7/图8，两者1～48脚的信号对应一致，下面的GPIO、脚号和功能分配继续使用，AM32目标与Flash规划保持不变。PCB必须换用UFQFPN48焊盘图形；本板将底部裸焊盘EP接GND并焊接。EP不作为新增GPIO，不预先假定EDA库将其编号为49。
 
 本表作为第一版原理图的引脚分配基线。依据 AM32 v2.21 的 `GEN_128K_G071 / HARDWARE_GROUP_G0_A`，提交 `6b3ef3d15228e8d70244bd6e3bd87c7eac939d6f`。已核对封装脚号、复用功能、参考固件定义及资源冲突；尚未做板级验证。DRV 的 SPI 初始化、故障处理、外围电路和采样参数仍需后续实现，通用目标不能直接作为本板可用固件。
 
@@ -85,8 +87,9 @@ PB6预留并不意味着现有固件具备任意文本调试串口；打印日�
 | 5 | VREF+ | ADC等的模拟电压参考，本版按3.3V参考设计并去耦 |
 | 6 | VDD/VDDA | 3.3V数字/模拟供电并去耦 |
 | 7 | VSS/VSSA | 接控制地 |
+| EP，底部裸焊盘 | VSS/地连接 | 按本板要求接GND并焊接；按UFQFPN48官方封装图核对焊盘，EDA编号随所选库确认 |
 
-未分配：PC13(1)、PC14(2)、PC15(3)、PF0(8)、PF1(9)、PA1(12)、PA4(15)、PB10(22)、PB11(23)、PC7(31)、PA11(33)、PA12(34)、PA15(37)、PD0(38)、PD1(39)、PD2(40)、PD3(41)、PB5(44)。括号内为LQFP48脚号。当前参考使用内部HSI/PLL，PF0/PF1可保留为后续外部晶振位置；不据此新增本版晶振要求。
+未分配：PC13(1)、PC14(2)、PC15(3)、PF0(8)、PF1(9)、PA1(12)、PA4(15)、PB10(22)、PB11(23)、PC7(31)、PA11(33)、PA12(34)、PA15(37)、PD0(38)、PD1(39)、PD2(40)、PD3(41)、PB5(44)。括号内为UFQFPN48脚号。当前参考使用内部HSI/PLL，PF0/PF1可保留为后续外部晶振位置；不据此新增本版晶振要求。
 
 DRV的供电、电荷泵、六路栅极输出、放大器输入输出及散热焊盘，留待其外围原理图阶段设计。本表没有给出一份可独立制造的完整接线图。
 
@@ -119,7 +122,7 @@ DRV的供电、电荷泵、六路栅极输出、放大器输入输出及散热�
 
 ## 7. 核对依据与交付范围
 
-- [ST官方数据手册 DS12232 Rev5](https://www.st.com/resource/en/datasheet/stm32g071cb.pdf)：第40页图7，LQFP48脚号；第43至48页表12，模拟功能与重映射/UCPD脚注；第49至50页表13/14，PA/PB复用。
+- [ST官方数据手册 DS12232 Rev5](https://www.st.com/resource/en/datasheet/stm32g071cb.pdf)：第40页图8，UFQFPN48脚号，与图7旧LQFP48对应关系比较；第43至48页表12，模拟功能与重映射/UCPD脚注；第49至50页表13/14，PA/PB复用；第128至129页第6.7节，UFQFPN48尺寸、裸焊盘与推荐焊盘图形。
 - [TI官方DRV832x数据手册 SLVSDJ3D](https://www.ti.com/lit/ds/symlink/drv8323.pdf)：第8页图6-6，DRV8323S RTA40；第8至9页表6-3，输入、SPI、开漏和CAL定义；第32页表8-2，6x PWM真值表；第53页，SPI时序约束。
 - [AM32固定提交的targets.h](https://github.com/am32-firmware/AM32/blob/6b3ef3d15228e8d70244bd6e3bd87c7eac939d6f/Inc/targets.h)：GEN_128K_G071和G0_A定义。
 - 同提交 `Mcu/g071/Src/peripherals.c`、`phaseouts.c`、`comparator.c`、`serial_telemetry.c`、`ADC.c`和`stm32g0xx_it.c`：实际初始化、换相、遥测、DMA和中断路径。检查记录见 `build/pin-audit`。

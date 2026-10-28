@@ -1,13 +1,13 @@
 {
-  "date": "2026-10-27",
-  "mcu": "STM32G071CBT6",
-  "mcu_package": "LQFP48",
+  "date": "2026-10-28",
+  "mcu": "STM32G071CBU6",
+  "mcu_package": "UFQFPN48",
   "flash_kib": 128,
   "driver": "DRV8323SRTAR",
   "driver_package": "RTA WQFN40",
   "target": "GEN_128K_G071",
   "reference_commit": "6b3ef3d15228e8d70244bd6e3bd87c7eac939d6f",
-  "status": "pin_allocation_baseline_A_not_board_validated",
+  "status": "pin_allocation_baseline_B_not_board_validated",
   "pins": [
     {
       "net": "U_H",
@@ -263,7 +263,8 @@
     "not_64k_target": true,
     "datasheet_pinout_and_AF_manually_reviewed": true,
     "preprocessor_only_no_new_board_firmware_build": true,
-    "board_tested": false
+    "board_tested": false,
+    "UFQFPN48_pinout_and_exposed_pad_reviewed": true
   },
   "spi_dma": "none_polling_planned",
   "nFAULT_bkin": {
@@ -281,7 +282,9 @@
       47,
       48,
       49,
-      50
+      50,
+      128,
+      129
     ],
     "drv8323.pdf": [
       8,
@@ -306,5 +309,23 @@
     "-IMcu/g071/Drivers/CMSIS/Device/ST/STM32G0xx/Include",
     "-dM",
     "Mcu/g071/Src/peripherals.c"
-  ]
+  ],
+  "package_change": {
+    "date": "2026-10-28",
+    "previous_mcu": "STM32G071CBT6",
+    "previous_package": "LQFP48",
+    "current_mcu": "STM32G071CBU6",
+    "current_package": "UFQFPN48",
+    "pins_1_to_48_mapping_unchanged": true,
+    "gpio_assignments_unchanged": true,
+    "flash_layout_unchanged": true,
+    "pcb_footprint_must_change": true,
+    "evidence": "ST DS12232 Rev5 page40 Figures7/8; pages128-129 section6.7"
+  },
+  "mcu_exposed_pad": {
+    "name": "EP",
+    "net": "GND",
+    "board_requirement": "connect_and_solder_to_PCB_ground",
+    "eda_pad_number": "verify_selected_symbol_and_footprint"
+  }
 }

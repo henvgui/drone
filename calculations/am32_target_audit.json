@@ -25,5 +25,9 @@
     "readback_available": true,
     "offline_tool_retry_and_separate_verify_found": true,
     "power_loss_rollback_verified": false
-  }
+  },
+  "current_board_mcu": "STM32G071CBU6",
+  "current_board_mcu_package": "UFQFPN48",
+  "package_update_date": "2026-10-28",
+  "package_change_requires_flash_layout_change": false
 }
