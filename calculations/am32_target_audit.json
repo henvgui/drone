@@ -1,0 +1,29 @@
+{
+  "app_version": "v2.21",
+  "commit": "6b3ef3d15228e8d70244bd6e3bd87c7eac939d6f",
+  "target": "GEN_128K_G071",
+  "hardware_group": "G0_A",
+  "dshot_reference_pin": "PB4",
+  "mcu_flash_kib": 128,
+  "bootloader_reference": "v19.0.0 G071 PB4, non-64K build",
+  "bootloader_candidate": "AM32_G071_BOOTLOADER_PB4_V19.hex",
+  "application_address": "0x8001000",
+  "target_settings_address": "0x0801f800",
+  "upstream_metadata_address": "0x800f7e0",
+  "candidate_metadata_address": "0x801f7e0",
+  "strict_gcc12_build": "failed on low-address Flash alias array-bounds warning treated as error",
+  "compatibility_flag": "--param=min-pagesize=0",
+  "original_layout_build_with_compatibility_flag": "passed with linker warnings",
+  "candidate_layout_build_with_compatibility_flag": "passed with linker warnings",
+  "upstream_checkout_modified": false,
+  "hardware_tested": false,
+  "board_ready": false,
+  "single_wire_protocol": {
+    "crc_bits": 16,
+    "success_ack": "0x30",
+    "bad_crc_ack": "0xC2",
+    "readback_available": true,
+    "offline_tool_retry_and_separate_verify_found": true,
+    "power_loss_rollback_verified": false
+  }
+}

@@ -1,0 +1,555 @@
+{
+  "revision": "V1.0 electrical budget draft A, 2026-10-26",
+  "mass_totals_g": {
+    "low": 219.76,
+    "nominal": 253.76,
+    "high": 313.76
+  },
+  "rotor_disk_area_m2": 0.006207166618944346,
+  "reference_point_ideal_induced_power_w": 18.248405327356547,
+  "reference_point_ideal_induced_to_electrical_power_ratio": 0.26741508392960944,
+  "performance_scenarios": [
+    {
+      "mass_g": 220,
+      "total_thrust_to_weight": 1,
+      "thrust_per_motor_gf": 55.0,
+      "ideal_induced_power_per_motor_w": 3.2121461993688167,
+      "input_current_per_motor_11_4v_a": [
+        0.9258065486902604,
+        1.6201614602079553
+      ],
+      "input_current_per_motor_10_5v_a": [
+        1.005161395720854,
+        1.7590324425114945
+      ],
+      "total_battery_current_10_5v_a": [
+        4.1635027257405595,
+        7.17898691290312
+      ],
+      "not_a_prediction_of_available_maximum_thrust": true
+    },
+    {
+      "mass_g": 220,
+      "total_thrust_to_weight": 2,
+      "thrust_per_motor_gf": 110.0,
+      "ideal_induced_power_per_motor_w": 9.085321438945144,
+      "input_current_per_motor_11_4v_a": [
+        2.618576354583187,
+        4.582508620520576
+      ],
+      "input_current_per_motor_10_5v_a": [
+        2.843025756404603,
+        4.975295073708055
+      ],
+      "total_battery_current_10_5v_a": [
+        11.514960168475554,
+        20.04403743768936
+      ],
+      "not_a_prediction_of_available_maximum_thrust": true
+    },
+    {
+      "mass_g": 220,
+      "total_thrust_to_weight": 2.5,
+      "thrust_per_motor_gf": 137.5,
+      "ideal_induced_power_per_motor_w": 12.697122709323468,
+      "input_current_per_motor_11_4v_a": [
+        3.6595717082009993,
+        6.404250489351748
+      ],
+      "input_current_per_motor_10_5v_a": [
+        3.9732492831896566,
+        6.953186245581898
+      ],
+      "total_battery_current_10_5v_a": [
+        16.03585427561577,
+        27.955602125184733
+      ],
+      "not_a_prediction_of_available_maximum_thrust": true
+    },
+    {
+      "mass_g": 220,
+      "total_thrust_to_weight": 3,
+      "thrust_per_motor_gf": 165.0,
+      "ideal_induced_power_per_motor_w": 16.690801255938176,
+      "input_current_per_motor_11_4v_a": [
+        4.810631940934561,
+        8.418605896635482
+      ],
+      "input_current_per_motor_10_5v_a": [
+        5.222971821586095,
+        9.140200687775666
+      ],
+      "total_battery_current_10_5v_a": [
+        21.034744429201524,
+        36.70365989395981
+      ],
+      "not_a_prediction_of_available_maximum_thrust": true
+    },
+    {
+      "mass_g": 253.76,
+      "total_thrust_to_weight": 1,
+      "thrust_per_motor_gf": 63.44,
+      "ideal_induced_power_per_motor_w": 3.9792024103545414,
+      "input_current_per_motor_11_4v_a": [
+        1.1468879127588276,
+        2.0070538473279482
+      ],
+      "input_current_per_motor_10_5v_a": [
+        1.2451925909952988,
+        2.1790870342417725
+      ],
+      "total_battery_current_10_5v_a": [
+        5.1236275068383375,
+        8.859205279824232
+      ],
+      "not_a_prediction_of_available_maximum_thrust": true
+    },
+    {
+      "mass_g": 253.76,
+      "total_thrust_to_weight": 2,
+      "thrust_per_motor_gf": 126.88,
+      "ideal_induced_power_per_motor_w": 11.254884032302204,
+      "input_current_per_motor_11_4v_a": [
+        3.24388888149061,
+        5.676805542608568
+      ],
+      "input_current_per_motor_10_5v_a": [
+        3.521936499904091,
+        6.163388874832159
+      ],
+      "total_battery_current_10_5v_a": [
+        14.230603142473507,
+        24.79641264218578
+      ],
+      "not_a_prediction_of_available_maximum_thrust": true
+    },
+    {
+      "mass_g": 253.76,
+      "total_thrust_to_weight": 2.5,
+      "thrust_per_motor_gf": 158.6,
+      "ideal_induced_power_per_motor_w": 15.72917860944042,
+      "input_current_per_motor_11_4v_a": [
+        4.533472531542978,
+        7.933576930200211
+      ],
+      "input_current_per_motor_10_5v_a": [
+        4.922055891389519,
+        8.613597809931658
+      ],
+      "total_battery_current_10_5v_a": [
+        19.831080708415218,
+        34.59724838258377
+      ],
+      "not_a_prediction_of_available_maximum_thrust": true
+    },
+    {
+      "mass_g": 253.76,
+      "total_thrust_to_weight": 3,
+      "thrust_per_motor_gf": 190.32,
+      "ideal_induced_power_per_motor_w": 20.67654224500382,
+      "input_current_per_motor_11_4v_a": [
+        5.959404406454734,
+        10.428957711295784
+      ],
+      "input_current_per_motor_10_5v_a": [
+        6.470210498436568,
+        11.322868372263994
+      ],
+      "total_battery_current_10_5v_a": [
+        26.023699136603415,
+        45.43433063191312
+      ],
+      "not_a_prediction_of_available_maximum_thrust": true
+    },
+    {
+      "mass_g": 260,
+      "total_thrust_to_weight": 1,
+      "thrust_per_motor_gf": 65.0,
+      "ideal_induced_power_per_motor_w": 4.126874903811474,
+      "input_current_per_motor_11_4v_a": [
+        1.1894501602464147,
+        2.0815377804312254
+      ],
+      "input_current_per_motor_10_5v_a": [
+        1.2914030311246787,
+        2.2599553044681877
+      ],
+      "total_battery_current_10_5v_a": [
+        5.308469267355858,
+        9.182678360729895
+      ],
+      "not_a_prediction_of_available_maximum_thrust": true
+    },
+    {
+      "mass_g": 260,
+      "total_thrust_to_weight": 2,
+      "thrust_per_motor_gf": 130.0,
+      "ideal_induced_power_per_motor_w": 11.672564918374695,
+      "input_current_per_motor_11_4v_a": [
+        3.3642730967746615,
+        5.887477919355657
+      ],
+      "input_current_per_motor_10_5v_a": [
+        3.6526393622124895,
+        6.392118883871857
+      ],
+      "total_battery_current_10_5v_a": [
+        14.753414591707102,
+        25.71133267834457
+      ],
+      "not_a_prediction_of_available_maximum_thrust": true
+    },
+    {
+      "mass_g": 260,
+      "total_thrust_to_weight": 2.5,
+      "thrust_per_motor_gf": 162.5,
+      "ideal_induced_power_per_motor_w": 16.312905393290688,
+      "input_current_per_motor_11_4v_a": [
+        4.701714587038669,
+        8.228000527317668
+      ],
+      "input_current_per_motor_10_5v_a": [
+        5.104718694499127,
+        8.93325771537347
+      ],
+      "total_battery_current_10_5v_a": [
+        20.56173192085365,
+        35.87588800435102
+      ],
+      "not_a_prediction_of_available_maximum_thrust": true
+    },
+    {
+      "mass_g": 260,
+      "total_thrust_to_weight": 3,
+      "thrust_per_motor_gf": 195.0,
+      "ideal_induced_power_per_motor_w": 21.443871029647184,
+      "input_current_per_motor_11_4v_a": [
+        6.180564331853198,
+        10.815987580743096
+      ],
+      "input_current_per_motor_10_5v_a": [
+        6.710326988869187,
+        11.743072230521076
+      ],
+      "total_battery_current_10_5v_a": [
+        26.98416509833389,
+        47.11514606494144
+      ],
+      "not_a_prediction_of_available_maximum_thrust": true
+    },
+    {
+      "mass_g": 300,
+      "total_thrust_to_weight": 1,
+      "thrust_per_motor_gf": 75.0,
+      "ideal_induced_power_per_motor_w": 5.114970868706739,
+      "input_current_per_motor_11_4v_a": [
+        1.4742397240633456,
+        2.579919517110855
+      ],
+      "input_current_per_motor_10_5v_a": [
+        1.600603128983061,
+        2.8010554757203567
+      ],
+      "total_battery_current_10_5v_a": [
+        6.545269658789387,
+        11.34707904573857
+      ],
+      "not_a_prediction_of_available_maximum_thrust": true
+    },
+    {
+      "mass_g": 300,
+      "total_thrust_to_weight": 2,
+      "thrust_per_motor_gf": 150.0,
+      "ideal_induced_power_per_motor_w": 14.467322347336726,
+      "input_current_per_motor_11_4v_a": [
+        4.169779623919106,
+        7.2971143418584345
+      ],
+      "input_current_per_motor_10_5v_a": [
+        4.527189305969315,
+        7.9225812854463005
+      ],
+      "total_battery_current_10_5v_a": [
+        18.2516143667344,
+        31.833182284642344
+      ],
+      "not_a_prediction_of_available_maximum_thrust": true
+    },
+    {
+      "mass_g": 300,
+      "total_thrust_to_weight": 2.5,
+      "thrust_per_motor_gf": 187.5,
+      "ideal_induced_power_per_motor_w": 20.218697638154215,
+      "input_current_per_motor_11_4v_a": [
+        5.827444181422893,
+        10.198027317490062
+      ],
+      "input_current_per_motor_10_5v_a": [
+        6.326939396973428,
+        11.072143944703496
+      ],
+      "total_battery_current_10_5v_a": [
+        25.450614730750853,
+        44.43143292167113
+      ],
+      "not_a_prediction_of_available_maximum_thrust": true
+    },
+    {
+      "mass_g": 300,
+      "total_thrust_to_weight": 3,
+      "thrust_per_motor_gf": 225.0,
+      "ideal_induced_power_per_motor_w": 26.578168271504367,
+      "input_current_per_motor_11_4v_a": [
+        7.660374313842111,
+        13.405655049223693
+      ],
+      "input_current_per_motor_10_5v_a": [
+        8.31697782645715,
+        14.55471119630001
+      ],
+      "total_battery_current_10_5v_a": [
+        33.410768448685744,
+        58.36170192805718
+      ],
+      "not_a_prediction_of_available_maximum_thrust": true
+    },
+    {
+      "mass_g": 320,
+      "total_thrust_to_weight": 1,
+      "thrust_per_motor_gf": 80.0,
+      "ideal_induced_power_per_motor_w": 5.6349004773937175,
+      "input_current_per_motor_11_4v_a": [
+        1.6240941225570864,
+        2.842164714474901
+      ],
+      "input_current_per_motor_10_5v_a": [
+        1.7633021902048367,
+        3.085778832858464
+      ],
+      "total_battery_current_10_5v_a": [
+        7.19606590367649,
+        12.485972474291
+      ],
+      "not_a_prediction_of_available_maximum_thrust": true
+    },
+    {
+      "mass_g": 320,
+      "total_thrust_to_weight": 2,
+      "thrust_per_motor_gf": 160.0,
+      "ideal_induced_power_per_motor_w": 15.937905355505647,
+      "input_current_per_motor_11_4v_a": [
+        4.593631869381326,
+        8.038855771417321
+      ],
+      "input_current_per_motor_10_5v_a": [
+        4.987371743899726,
+        8.72790055182452
+      ],
+      "total_battery_current_10_5v_a": [
+        20.092344118456047,
+        35.05445935015522
+      ],
+      "not_a_prediction_of_available_maximum_thrust": true
+    },
+    {
+      "mass_g": 320,
+      "total_thrust_to_weight": 2.5,
+      "thrust_per_motor_gf": 200.0,
+      "ideal_induced_power_per_motor_w": 22.273899871167863,
+      "input_current_per_motor_11_4v_a": [
+        6.419795702216301,
+        11.234642478878524
+      ],
+      "input_current_per_motor_10_5v_a": [
+        6.970063905263412,
+        12.197611834210969
+      ],
+      "total_battery_current_10_5v_a": [
+        28.02311276391079,
+        48.93330447970102
+      ],
+      "not_a_prediction_of_available_maximum_thrust": true
+    },
+    {
+      "mass_g": 320,
+      "total_thrust_to_weight": 3,
+      "thrust_per_motor_gf": 240.0,
+      "ideal_induced_power_per_motor_w": 29.279801767320112,
+      "input_current_per_motor_11_4v_a": [
+        8.439040609628602,
+        14.768321066850055
+      ],
+      "input_current_per_motor_10_5v_a": [
+        9.162386947596769,
+        16.034177158294344
+      ],
+      "total_battery_current_10_5v_a": [
+        36.79240493324422,
+        64.27956577603452
+      ],
+      "not_a_prediction_of_available_maximum_thrust": true
+    }
+  ],
+  "pcb_estimate_g": {
+    "fr4": 2.26366,
+    "retained_copper": 1.5805440000000002,
+    "assembled": 8.044204
+  },
+  "wire_mass_estimates": [
+    {
+      "name": "main power AWG16, both conductors together",
+      "copper_mass_g": 2.3475200000000003,
+      "insulation_mass_g": 1.3820600329384884,
+      "total_mass_g": 3.7295800329384887
+    },
+    {
+      "name": "four ESC branches AWG20, both conductors together",
+      "copper_mass_g": 3.7130240000000008,
+      "insulation_mass_g": 1.9456224474314232,
+      "total_mass_g": 5.658646447431424
+    },
+    {
+      "name": "additional signal wires AWG28",
+      "copper_mass_g": 0.5806080000000001,
+      "insulation_mass_g": 0.4047886315913923,
+      "total_mass_g": 0.9853966315913925
+    }
+  ],
+  "wire_mass_total_g": 10.373623111961306,
+  "bridge_loss_scenarios": [
+    {
+      "conducting_loop_rms_a": 3,
+      "bridge_conduction_loss_w": 0.108,
+      "bridge_switching_loss_w": 0.14094,
+      "bridge_deadtime_loss_w": 0.0288,
+      "bridge_loss_budget_w": 0.5777399999999999,
+      "shunt_loss_if_shunt_rms_equals_loop_rms_w": 0.018000000000000002,
+      "shunt_voltage_magnitude_v": 0.006
+    },
+    {
+      "conducting_loop_rms_a": 10,
+      "bridge_conduction_loss_w": 1.2,
+      "bridge_switching_loss_w": 0.46979999999999994,
+      "bridge_deadtime_loss_w": 0.096,
+      "bridge_loss_budget_w": 2.0658,
+      "shunt_loss_if_shunt_rms_equals_loop_rms_w": 0.2,
+      "shunt_voltage_magnitude_v": 0.02
+    },
+    {
+      "conducting_loop_rms_a": 15,
+      "bridge_conduction_loss_w": 2.7,
+      "bridge_switching_loss_w": 0.7047,
+      "bridge_deadtime_loss_w": 0.14400000000000002,
+      "bridge_loss_budget_w": 3.8487,
+      "shunt_loss_if_shunt_rms_equals_loop_rms_w": 0.45,
+      "shunt_voltage_magnitude_v": 0.03
+    },
+    {
+      "conducting_loop_rms_a": 20,
+      "bridge_conduction_loss_w": 4.8,
+      "bridge_switching_loss_w": 0.9395999999999999,
+      "bridge_deadtime_loss_w": 0.192,
+      "bridge_loss_budget_w": 6.231599999999999,
+      "shunt_loss_if_shunt_rms_equals_loop_rms_w": 0.8,
+      "shunt_voltage_magnitude_v": 0.04
+    },
+    {
+      "conducting_loop_rms_a": 30,
+      "bridge_conduction_loss_w": 10.8,
+      "bridge_switching_loss_w": 1.4094,
+      "bridge_deadtime_loss_w": 0.28800000000000003,
+      "bridge_loss_budget_w": 12.797400000000001,
+      "shunt_loss_if_shunt_rms_equals_loop_rms_w": 1.8,
+      "shunt_voltage_magnitude_v": 0.06
+    }
+  ],
+  "gate_driver": {
+    "all_six_gate_average_current_24khz_a": 0.008639999999999998,
+    "all_three_high_side_average_current_24khz_a": 0.004319999999999999,
+    "all_three_high_side_average_current_48khz_a": 0.008639999999999998,
+    "gate_charge_power_24khz_w": 0.08639999999999998,
+    "miller_charge_time_source_s": 6.083333333333334e-08,
+    "miller_charge_time_sink_s": 3.041666666666667e-08
+  },
+  "wire_electrical_checks": [
+    {
+      "name": "AWG20 ESC DC branch",
+      "resistance_20c_ohm": 0.006656756756756757,
+      "resistance_75c_ohm": 0.00809561472972973,
+      "currents": [
+        {
+          "a": 10,
+          "drop_75c_v": 0.0809561472972973,
+          "loss_75c_w": 0.8095614729729731
+        },
+        {
+          "a": 20,
+          "drop_75c_v": 0.1619122945945946,
+          "loss_75c_w": 3.2382458918918924
+        }
+      ]
+    },
+    {
+      "name": "AWG16 main DC loop",
+      "resistance_20c_ohm": 0.002632213740458015,
+      "resistance_75c_ohm": 0.0032011667404580153,
+      "currents": [
+        {
+          "a": 15,
+          "drop_75c_v": 0.04801750110687023,
+          "loss_75c_w": 0.7202625166030534
+        },
+        {
+          "a": 20,
+          "drop_75c_v": 0.06402333480916031,
+          "loss_75c_w": 1.280466696183206
+        },
+        {
+          "a": 40,
+          "drop_75c_v": 0.12804666961832062,
+          "loss_75c_w": 5.121866784732824
+        }
+      ]
+    },
+    {
+      "name": "AWG24 original two active motor leads, phase current",
+      "resistance_20c_ohm": 0.025230731707317072,
+      "resistance_75c_ohm": 0.03068435436585366,
+      "currents": [
+        {
+          "a": 10,
+          "drop_75c_v": 0.3068435436585366,
+          "loss_75c_w": 3.068435436585366
+        },
+        {
+          "a": 20,
+          "drop_75c_v": 0.6136870873170732,
+          "loss_75c_w": 12.273741746341464
+        }
+      ]
+    },
+    {
+      "name": "AWG24 shortened two active motor leads, phase current",
+      "resistance_20c_ohm": 0.008410243902439026,
+      "resistance_75c_ohm": 0.010228118121951221,
+      "currents": [
+        {
+          "a": 10,
+          "drop_75c_v": 0.10228118121951221,
+          "loss_75c_w": 1.0228118121951222
+        },
+        {
+          "a": 20,
+          "drop_75c_v": 0.20456236243902443,
+          "loss_75c_w": 4.091247248780489
+        }
+      ]
+    }
+  ],
+  "battery_label_only": {
+    "nominal_energy_wh": 12.540000000000001,
+    "manufacturer_60c_current_a": 66.0,
+    "specific_energy_at_user_66g_wh_kg": 190.0,
+    "actual_capacity_internal_resistance_and_voltage_sag_not_measured": true
+  }
+}

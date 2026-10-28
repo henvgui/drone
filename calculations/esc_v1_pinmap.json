@@ -1,0 +1,310 @@
+{
+  "date": "2026-10-27",
+  "mcu": "STM32G071CBT6",
+  "mcu_package": "LQFP48",
+  "flash_kib": 128,
+  "driver": "DRV8323SRTAR",
+  "driver_package": "RTA WQFN40",
+  "target": "GEN_128K_G071",
+  "reference_commit": "6b3ef3d15228e8d70244bd6e3bd87c7eac939d6f",
+  "status": "pin_allocation_baseline_A_not_board_validated",
+  "pins": [
+    {
+      "net": "U_H",
+      "gpio": "PA10",
+      "mcu_pad": 32,
+      "function": "TIM1_CH3",
+      "af": 2,
+      "drv_pin": "INHA",
+      "drv_pad": 34
+    },
+    {
+      "net": "U_L",
+      "gpio": "PB1",
+      "mcu_pad": 20,
+      "function": "TIM1_CH3N",
+      "af": 2,
+      "drv_pin": "INLA",
+      "drv_pad": 35
+    },
+    {
+      "net": "V_H",
+      "gpio": "PA9",
+      "mcu_pad": 29,
+      "function": "TIM1_CH2",
+      "af": 2,
+      "drv_pin": "INHB",
+      "drv_pad": 36
+    },
+    {
+      "net": "V_L",
+      "gpio": "PB0",
+      "mcu_pad": 19,
+      "function": "TIM1_CH2N",
+      "af": 2,
+      "drv_pin": "INLB",
+      "drv_pad": 37
+    },
+    {
+      "net": "W_H",
+      "gpio": "PA8",
+      "mcu_pad": 28,
+      "function": "TIM1_CH1",
+      "af": 2,
+      "drv_pin": "INHC",
+      "drv_pad": 38
+    },
+    {
+      "net": "W_L",
+      "gpio": "PA7",
+      "mcu_pad": 18,
+      "function": "TIM1_CH1N",
+      "af": 2,
+      "drv_pin": "INLC",
+      "drv_pad": 39
+    },
+    {
+      "net": "DSHOT",
+      "gpio": "PB4",
+      "mcu_pad": 43,
+      "function": "TIM3_CH1",
+      "af": 1,
+      "drv_pin": null,
+      "drv_pad": null
+    },
+    {
+      "net": "DRV_SCK",
+      "gpio": "PB13",
+      "mcu_pad": 25,
+      "function": "SPI2_SCK",
+      "af": 0,
+      "drv_pin": "SCLK",
+      "drv_pad": 28
+    },
+    {
+      "net": "DRV_MISO",
+      "gpio": "PB14",
+      "mcu_pad": 26,
+      "function": "SPI2_MISO",
+      "af": 0,
+      "drv_pin": "SDO",
+      "drv_pad": 26
+    },
+    {
+      "net": "DRV_MOSI",
+      "gpio": "PB15",
+      "mcu_pad": 27,
+      "function": "SPI2_MOSI",
+      "af": 0,
+      "drv_pin": "SDI",
+      "drv_pad": 27
+    },
+    {
+      "net": "DRV_nCS",
+      "gpio": "PB9",
+      "mcu_pad": 48,
+      "function": "GPIO_OUT",
+      "af": null,
+      "drv_pin": "nSCS",
+      "drv_pad": 29
+    },
+    {
+      "net": "DRV_EN",
+      "gpio": "PB8",
+      "mcu_pad": 47,
+      "function": "GPIO_OUT",
+      "af": null,
+      "drv_pin": "ENABLE",
+      "drv_pad": 30
+    },
+    {
+      "net": "DRV_nFAULT",
+      "gpio": "PB12",
+      "mcu_pad": 24,
+      "function": "GPIO_EXTI12",
+      "af": null,
+      "drv_pin": "nFAULT",
+      "drv_pad": 25
+    },
+    {
+      "net": "DRV_CAL",
+      "gpio": "PB2",
+      "mcu_pad": 21,
+      "function": "GPIO_OUT",
+      "af": null,
+      "drv_pin": "CAL",
+      "drv_pad": 31
+    },
+    {
+      "net": "SWDIO",
+      "gpio": "PA13",
+      "mcu_pad": 35,
+      "function": "SWDIO",
+      "af": 0,
+      "drv_pin": null,
+      "drv_pad": null
+    },
+    {
+      "net": "SWCLK",
+      "gpio": "PA14",
+      "mcu_pad": 36,
+      "function": "SWCLK",
+      "af": 0,
+      "drv_pin": null,
+      "drv_pad": null
+    },
+    {
+      "net": "NRST",
+      "gpio": "PF2",
+      "mcu_pad": 10,
+      "function": "NRST",
+      "af": null,
+      "drv_pin": null,
+      "drv_pad": null
+    },
+    {
+      "net": "TLM_TX",
+      "gpio": "PB6",
+      "mcu_pad": 45,
+      "function": "USART1_TX",
+      "af": 0,
+      "drv_pin": null,
+      "drv_pad": null
+    },
+    {
+      "net": "STATUS_LED",
+      "gpio": "PC6",
+      "mcu_pad": 30,
+      "function": "GPIO_OUT",
+      "af": null,
+      "drv_pin": null,
+      "drv_pad": null
+    },
+    {
+      "net": "BEMF_U",
+      "gpio": "PB7",
+      "mcu_pad": 46,
+      "function": "COMP2_INM_IO2",
+      "af": null,
+      "drv_pin": null,
+      "drv_pad": null
+    },
+    {
+      "net": "BEMF_V",
+      "gpio": "PB3",
+      "mcu_pad": 42,
+      "function": "COMP2_INM_IO1",
+      "af": null,
+      "drv_pin": null,
+      "drv_pad": null
+    },
+    {
+      "net": "BEMF_W",
+      "gpio": "PA2",
+      "mcu_pad": 13,
+      "function": "COMP2_INM_IO3",
+      "af": null,
+      "drv_pin": null,
+      "drv_pad": null
+    },
+    {
+      "net": "BEMF_REF",
+      "gpio": "PA3",
+      "mcu_pad": 14,
+      "function": "COMP2_INP_IO3",
+      "af": null,
+      "drv_pin": null,
+      "drv_pad": null
+    },
+    {
+      "net": "CURRENT_SENSE",
+      "gpio": "PA5",
+      "mcu_pad": 16,
+      "function": "ADC_IN5",
+      "af": null,
+      "drv_pin": null,
+      "drv_pad": null
+    },
+    {
+      "net": "VBAT_SENSE",
+      "gpio": "PA6",
+      "mcu_pad": 17,
+      "function": "ADC_IN6",
+      "af": null,
+      "drv_pin": null,
+      "drv_pad": null
+    },
+    {
+      "net": "TEMP_SENSE",
+      "gpio": "PA0",
+      "mcu_pad": 11,
+      "function": "ADC_IN0",
+      "af": null,
+      "drv_pin": null,
+      "drv_pad": null
+    }
+  ],
+  "required_build_defines": [
+    "NO_PA11_PA12_REMAP"
+  ],
+  "required_startup_changes": [
+    "explicitly_clear_PA11_RMP_PA12_RMP",
+    "disable_UCPD_dead_battery_pulldowns",
+    "initialize_SPI2_and_driver_GPIO",
+    "add_DRV_configuration_and_fault_handling",
+    "dispatch_EXTI12_and_EXTI15_separately"
+  ],
+  "checks": {
+    "unique_gpio": true,
+    "unique_mcu_pad": true,
+    "unique_driver_signal_pad": true,
+    "actual_upstream_preprocessor_pwm_input_adc_comparator_match": true,
+    "preprocessor_no_default_pin_remap_calls_with_override": true,
+    "not_64k_target": true,
+    "datasheet_pinout_and_AF_manually_reviewed": true,
+    "preprocessor_only_no_new_board_firmware_build": true,
+    "board_tested": false
+  },
+  "spi_dma": "none_polling_planned",
+  "nFAULT_bkin": {
+    "gpio": "PB12",
+    "af": 2,
+    "enabled_in_upstream": false
+  },
+  "source_pdf_pages": {
+    "stm32g071cb.pdf": [
+      40,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "drv8323.pdf": [
+      8,
+      9,
+      32,
+      53
+    ]
+  },
+  "preprocessor_command": [
+    "C:\\Program Files (x86)\\Arm GNU Toolchain arm-none-eabi\\12.2 mpacbti-rel1\\bin\\arm-none-eabi-gcc.EXE",
+    "-mcpu=cortex-m0",
+    "-mthumb",
+    "-E",
+    "-DGEN_128K_G071",
+    "-DSTM32G071xx",
+    "-DUSE_FULL_LL_DRIVER",
+    "-DNO_PA11_PA12_REMAP",
+    "-IInc",
+    "-IMcu/g071/Inc",
+    "-IMcu/g071/Drivers/STM32G0xx_HAL_Driver/Inc",
+    "-IMcu/g071/Drivers/CMSIS/Include",
+    "-IMcu/g071/Drivers/CMSIS/Device/ST/STM32G0xx/Include",
+    "-dM",
+    "Mcu/g071/Src/peripherals.c"
+  ]
+}
