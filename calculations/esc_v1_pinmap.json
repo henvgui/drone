@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-28",
+  "date": "2026-10-31",
   "mcu": "STM32G071CBU6",
   "mcu_package": "UFQFPN48",
   "flash_kib": 128,
@@ -7,7 +7,7 @@
   "driver_package": "RTA WQFN40",
   "target": "GEN_128K_G071",
   "reference_commit": "6b3ef3d15228e8d70244bd6e3bd87c7eac939d6f",
-  "status": "pin_allocation_baseline_B_not_board_validated",
+  "status": "pin_allocation_baseline_C_not_board_validated",
   "pins": [
     {
       "net": "U_H",
@@ -233,15 +233,6 @@
       "af": null,
       "drv_pin": null,
       "drv_pad": null
-    },
-    {
-      "net": "TEMP_SENSE",
-      "gpio": "PA0",
-      "mcu_pad": 11,
-      "function": "ADC_IN0",
-      "af": null,
-      "drv_pin": null,
-      "drv_pad": null
     }
   ],
   "required_build_defines": [
@@ -264,7 +255,8 @@
     "datasheet_pinout_and_AF_manually_reviewed": true,
     "preprocessor_only_no_new_board_firmware_build": true,
     "board_tested": false,
-    "UFQFPN48_pinout_and_exposed_pad_reviewed": true
+    "UFQFPN48_pinout_and_exposed_pad_reviewed": true,
+    "G071_reference_internal_temperature_channel_verified": true
   },
   "spi_dma": "none_polling_planned",
   "nFAULT_bkin": {
@@ -327,5 +319,22 @@
     "net": "GND",
     "board_requirement": "connect_and_solder_to_PCB_ground",
     "eda_pad_number": "verify_selected_symbol_and_footprint"
+  },
+  "temperature_measurement": {
+    "source": "MCU_internal_temperature_sensor",
+    "adc_channel": "LL_ADC_CHANNEL_TEMPSENSOR",
+    "external_gpio": null,
+    "external_NTC_installed": false,
+    "PA0_pad11": "unassigned_spare",
+    "measures": "MCU_die_temperature_only",
+    "power_device_temperature_validation": "external_bench_instrumentation"
+  },
+  "test_board_measurement_plan": {
+    "current": "retain_PA5_reserved_frontend_design_deferred",
+    "local_input_voltage": "retain_PA6_reserved_frontend_design_deferred",
+    "sample_min_max_logging": "planned_not_implemented",
+    "fast_spike_validation": "separate_oscilloscope_measurement",
+    "ADC_sample_max_is_true_transient_peak": false,
+    "BEMF_design": "still_deferred"
   }
 }
