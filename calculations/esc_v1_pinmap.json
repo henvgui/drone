@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-31",
+  "date": "2026-11-02",
   "mcu": "STM32G071CBU6",
   "mcu_package": "UFQFPN48",
   "flash_kib": 128,
@@ -7,7 +7,7 @@
   "driver_package": "RTA WQFN40",
   "target": "GEN_128K_G071",
   "reference_commit": "6b3ef3d15228e8d70244bd6e3bd87c7eac939d6f",
-  "status": "pin_allocation_baseline_C_not_board_validated",
+  "status": "pin_allocation_baseline_D_not_board_validated",
   "pins": [
     {
       "net": "U_H",
@@ -336,5 +336,27 @@
     "fast_spike_validation": "separate_oscilloscope_measurement",
     "ADC_sample_max_is_true_transient_peak": false,
     "BEMF_design": "still_deferred"
+  },
+  "uart_interface": {
+    "net": "TLM_TX",
+    "gpio": "PB6",
+    "mcu_pad": 45,
+    "function": "USART1_TX",
+    "af": 0,
+    "required": true,
+    "must_expose": [
+      "PB6",
+      "GND"
+    ],
+    "uses": [
+      "serial_telemetry",
+      "development_log_output"
+    ],
+    "upstream_baud": 115200,
+    "upstream_electrical_mode": "open_drain_half_duplex",
+    "log_implementation": "pending",
+    "transmission_policy": "separate_debug_text_and_binary_telemetry_modes",
+    "PC_command_reception": "requires_additional_adaptation",
+    "PB7_remains_BEMF_U": true
   }
 }
